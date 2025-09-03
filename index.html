@@ -250,6 +250,80 @@
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
+                            <h3 class="job-title">Concepteur / Développeur — Microservices Java & Angular</h3>
+                            <div class="time">2025 — en cours</div>
+                        </div><!--//upper-row-->
+                        <div class="company">Projet personnel que je présenterai à l'examin du TP CDA —
+                            SneakyDateReforged</div>
+                    </div><!--//meta-->
+
+                    <div class="details">
+                        <p>Conception d’une plateforme « cheater-free » de rendez-vous entre joueurs, bâtie sur une
+                            architecture microservices Spring Boot et un frontend Angular. Objectif : sécuriser
+                            l’écosystème (JWT, contrôles externes) et offrir des fonctionnalités sociales (RDV,
+                            invitations,
+                            listes d’amis, profils, notifications).</p>
+
+                        <p><strong>Réalisations principales :</strong><br>
+                            • Découpage en services : <em>auth-service</em>, <em>rdv-service</em>,
+                            <em>invitation-service</em> (MySQL),
+                            <em>friend-service</em>, <em>profile-service</em>, <em>notification-service</em>.<br>
+                            • Configuration centralisée (Spring Cloud Config), découverte de services (Eureka),
+                            communication inter-services via OpenFeign avec propagation du JWT (interceptor).<br>
+                            • Sécurisation des endpoints avec Spring Security + JWT (HMAC-256), filtres personnalisés,
+                            CORS.<br>
+                            • Intégration de l’API Web Steam <em>(GetPlayerBans)</em> à l’inscription : blocage des
+                            comptes bannis (critère d’éligibilité).<br>
+                            • Spécifications fonctionnelles détaillées (pages non-auth & auth) et premières
+                            implémentations
+                            Angular 17 + Angular Material (accueil, inscription, connexion, planning RDV, invitations,
+                            amis/listes, profils).<br>
+                            • Dockerisation multi-services et orchestration via Docker Compose (environnement dev).<br>
+                            • Jeux de tests Postman et environnements dédiés pour l’API de chaque service.<br>
+                            • <em>PoC</em> d’intégration Discord (bot) pour validation d’identité/présence vocale (en
+                            cours).
+                            • Création d'un script PowerShell pour le démarrage complet de l'app (tous les ms) via
+                            Docker-Compose.
+                        </p>
+
+                        <table>
+                            <tr>
+                                <th style="color: #e53170">Stack/Relevant tools</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Frontend</strong></td>
+                                <td>Angular 17, TypeScript, Angular Material, RxJS, HTML, SCSS</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Backend</strong></td>
+                                <td>Java 17, Spring Boot 3, Spring Security, Spring Data JPA, Spring Cloud (Config,
+                                    Eureka, OpenFeign), JWT</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bases de données</strong></td>
+                                <td>MySQL (invitation, auth…), MongoDB (selon services)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Intégrations</strong></td>
+                                <td>API Web Steam (GetPlayerBans), Discord (bot — PoC), REST</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Infrastructure / DevOps</strong></td>
+                                <td>Docker, Docker Compose, Spring Cloud Config, GitHub/GitLab, Postman</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IDE</strong></td>
+                                <td>IntelliJ IDEA, VSCode</td>
+                            </tr>
+                        </table>
+                        <hr>
+                    </div><!--//details-->
+                </div><!--//item-->
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
                             <h3 class="job-title">Développeur Full Stack - Firebase / React / Intégrations externes</h3>
                             <div class="time">2025</div>
                         </div><!--//upper-row-->
