@@ -361,98 +361,6 @@
                             <h3 class="job-title">Concepteur / Développeur — Microservices Java & Angular</h3>
                             <div class="time">2025</div>
                         </div><!--//upper-row-->
-                        <div class="company">Projet personnel que j'ai présenté à l'examen du TP CDA — <a
-                                href="https://github.com/Jirawah/sneakyDateReforged-v0.1"
-                                target="_blank"><strong>SneakyDateReforged</strong></a></div>
-                    </div><!--//meta-->
-
-                    <div class="details">
-                        <p>
-                            Conception d’une plateforme « cheater-free » de rendez-vous entre joueurs, bâtie sur une
-                            architecture microservices Spring Boot et un frontend Angular, communicant avec les API Web
-                            Steam et Discord.<br>
-                            Objectif : sécuriser l’écosystème (JWT, contrôles externes) et offrir des fonctionnalités
-                            sociales
-                            (RDV, invitations, listes d’amis, profils, notifications).
-                        </p>
-
-                        <p><strong>Conception & modélisation :</strong><br>
-                            • Recueil des besoins, user stories et backlog (vision produit / DoD).<br>
-                            • Wireframes puis maquettes sur Figma (design system, responsive).<br>
-                            • Modélisation UML : cas d’utilisation, activités, séquences, classes (contrats d’API et
-                            flux).<br>
-                            • Conception BDD avec la méthode Merise : MCD → MLD → MPD, normalisation et contraintes
-                            d’intégrité.<br>
-                            • Schéma d’architecture (microservices, sécurité JWT, passerelles d’intégration).
-                        </p>
-
-                        <p><strong>Réalisations principales :</strong><br>
-                            • Découpage en services : <em>auth-service</em>, <em>rdv-service</em>,
-                            <em>invitation-service</em> (MySQL),
-                            <em>friend-service</em>, <em>profile-service</em>, <em>notification-service</em>.<br>
-                            • Configuration centralisée (Spring Cloud Config), découverte de services (Eureka),
-                            communication inter-services via OpenFeign avec propagation du JWT (interceptor).<br>
-                            • Sécurisation des endpoints avec Spring Security + JWT (HMAC-256), filtres personnalisés,
-                            CORS.<br>
-                            • Intégration de l’API Web Steam <em>(GetPlayerBans)</em> à l’inscription : blocage des
-                            comptes bannis (critère d’éligibilité).<br>
-                            • Spécifications fonctionnelles détaillées (pages non-auth & auth) et premières
-                            implémentations Angular 17 + Angular Material
-                            (accueil, inscription, connexion, planning RDV, invitations, amis/listes, profils).<br>
-                            • Dockerisation multi-services et orchestration via Docker Compose (environnement dev).<br>
-                            • Jeux de tests Postman et environnements dédiés pour l’API de chaque service.<br>
-                            • <em>PoC</em> d’intégration Discord (bot) pour récupération des infos de l’utilisateur
-                            (pseudo et avatar).<br>
-                            • Création d’un script PowerShell pour le démarrage complet de l’app (tous les
-                            microservices) via Docker Compose.
-                        </p>
-
-                        <table>
-                            <tr>
-                                <th style="color: #e53170">Stack/Relevant tools</th>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td><strong>Frontend</strong></td>
-                                <td>Angular 17, TypeScript, Angular Material, RxJS, HTML, SCSS</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Backend</strong></td>
-                                <td>Java 17, Spring Boot 3, Spring Security, Spring Data JPA, Spring Cloud (Config,
-                                    Eureka, OpenFeign), JWT</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Bases de données</strong></td>
-                                <td>MySQL (invitation, auth…), MongoDB (selon services)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Intégrations</strong></td>
-                                <td>API Web Steam (GetPlayerBans), Discord (bot — PoC), REST</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Infrastructure / DevOps</strong></td>
-                                <td>Docker, Docker Compose, Spring Cloud Config, GitHub/GitLab, Postman</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Conception & Modélisation</strong></td>
-                                <td>UML (Use cases, Activity, Sequence, Class), Merise (MCD/MLD/MPD), Wireframes &
-                                    maquettes Figma</td>
-                            </tr>
-                            <tr>
-                                <td><strong>IDE</strong></td>
-                                <td>IntelliJ IDEA, VSCode</td>
-                            </tr>
-                        </table>
-                        <hr>
-                    </div><!--//details-->
-                </div><!--//item-->
-
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Concepteur / Développeur — Microservices Java & Angular</h3>
-                            <div class="time">2025</div>
-                        </div><!--//upper-row-->
                         <div class="company">
                             Projet personnel que j'ai présenté à l'examen du TP CDA —
                             <a href="https://github.com/Jirawah/sneakyDateReforged-v0.1" target="_blank">
@@ -489,11 +397,11 @@
                             communication inter-services via OpenFeign avec propagation du JWT (interceptor).<br>
                             • Sécurisation des endpoints avec Spring Security + JWT (HMAC-256), filtres personnalisés,
                             CORS.<br>
-                            • Intégration de l’API Web Steam <em>(GetPlayerBans)</em> à l’inscription : blocage des
+                            • Intégration de l’API Web Steam <em>(GetPlayerBans)</em> à chaque login : blocage des
                             comptes bannis (critère d’éligibilité).<br>
                             • Dockerisation multi-services et orchestration via Docker Compose (environnement dev).<br>
                             • Jeux de tests Postman et environnements dédiés pour l’API de chaque service.<br>
-                            • <em>PoC</em> d’intégration Discord (bot) pour récupération des infos de l’utilisateur
+                            • Création et intégration du bot Discord pour récupération des infos de l’utilisateur
                             (pseudo et avatar).<br>
                             • Création d’un script PowerShell pour le démarrage complet de l’app (tous les
                             microservices) via Docker Compose.
