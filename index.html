@@ -166,11 +166,11 @@
                     <tr>
                         <td><strong>Secteurs&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;</strong>
                         </td>
-                        <td>GED, Service et Prestation, Communication</td>
+                        <td>Service et prestation, communication, association, organisme de formation</td>
                     </tr>
                     <tr>
                         <td><strong>Échange métiers</strong></td>
-                        <td>Project Manager, Design Team, Product Owner</td>
+                        <td>Project Manager, Design Team, Product Owner, Tech Lead</td>
                     </tr>
                     <tr>
                         <td><strong>Développement</strong></td>
@@ -190,7 +190,7 @@
                     </tr>
                     <tr>
                         <td><strong>Frameworks Frontend</strong></td>
-                        <td>Angular, React, Thymeleaf</td>
+                        <td>Angular, React, (Thymeleaf)</td>
                     </tr>
                     <tr>
                         <td><strong>Frameworks Backend</strong></td>
@@ -210,11 +210,11 @@
                     </tr>
                     <tr>
                         <td><strong>Librairies</strong></td>
-                        <td>Angular Material, RxJS, Bootstrap, Feign, Tailwind (notions)</td>
+                        <td>Angular Material, RxJS, Bootstrap, Feign, Tailwind</td>
                     </tr>
                     <tr>
                         <td><strong>Testing</strong></td>
-                        <td>JUnit, JaCoco, Mockito, Postman</td>
+                        <td>JUnit, JaCoco, Testcontainer, Mockito, Postman</td>
                     </tr>
                     <tr>
                         <td><strong>Version Control</strong></td>
@@ -270,7 +270,7 @@
                     </tr>
                     <tr>
                         <td><strong>Bases de données NoSQL</strong></td>
-                        <td>MongoDB</td>
+                        <td>MongoDB, Firestore</td>
                     </tr>
                 </table>
 
@@ -304,7 +304,7 @@
 
                         <p>
                             <strong>Réalisations principales :</strong><br>
-                            • Optimisation du SEO on-page et off-page (balises, maillage, schema.org, netlinking) avec
+                            • Optimisation du SEO on-page et off-page (balises, maillage, schema.org, sitemap.xml, netlinking) avec
                             un score
                             de 100% sur Google Lighthouse (storefront et EduArchiv).<br>
                             • Définition des KPIs business (génération de leads, création de compte, engagement) et mise
@@ -318,9 +318,9 @@
                             • Récupération et analyse des métriques issues de Google Search Console (GSC) et de GA4
                             (trafic, requêtes, CTR, conversions), puis synthèse dans des rapports mensuels envoyés par
                             mail
-                            à la direction (tableaux de bord Looker Studio).<br>
+                            à la direction (tableaux de bord Looker Studio), puis retour des métriques dans l'application admin du monorepo (prochain sprint).<br>
                             • Développement de fonctions backend serverless avec Firebase Functions (Node.js 20,
-                            ESM/CommonJS).<br>
+                            ESM).<br>
                             • Mise en place et gestion de Firestore (lecture/écriture, transactions, triggers,
                             émulateurs).<br>
                             • Intégration de Firebase Storage (upload et génération d’URL sécurisées pour fichiers
@@ -425,15 +425,15 @@
 
                         <p><strong>Réalisations principales :</strong><br>
                             • Découpage en services : <em>auth-service</em>, <em>rdv-service</em>,
-                            <em>invitation-service</em> (MySQL),
+                            <em>invitation-service</em>,
                             <em>friend-service</em>, <em>profile-service</em>, <em>notification-service</em>.<br>
                             • Configuration centralisée (Spring Cloud Config), découverte de services (Eureka),
-                            communication inter-services via OpenFeign avec propagation du JWT (interceptor).<br>
+                            communication inter-services via OpenFeign avec propagation automatique du JWT dans les en-têtes HTTP (RequestInterceptor Feign)<br>
                             • Sécurisation des endpoints avec Spring Security + JWT (HMAC-256), filtres personnalisés,
                             CORS.<br>
                             • Intégration de l’API Web Steam <em>(GetPlayerBans)</em> à chaque login : blocage des
                             comptes bannis (critère d’éligibilité).<br>
-                            • Dockerisation multi-services et orchestration via Docker Compose (environnement dev).<br>
+                            • Dockerisation multi-services et orchestration via Docker Compose.<br>
                             • Jeux de tests Postman et environnements dédiés pour l’API de chaque service.<br>
                             • Création et intégration du bot Discord pour récupération des infos de l’utilisateur
                             (pseudo et avatar).<br>
@@ -449,8 +449,8 @@
                             champs requis).<br>
                             • Gestion du JWT côté client (sessionStorage) avec interceptors HTTP (authentification et
                             gestion d’erreurs) et guards de navigation (pages publiques / pages authentifiées).<br>
-                            • Composants réutilisables pour les listes d’amis, le planning de RDV, les cards de
-                            profils et les bandeaux d’alerte (erreur/succès).<br>
+                            • Composants réutilisables pour le header, les listes d’amis (aside right), les cards de
+                            profils (aside left) et les bandeaux d’alerte (erreur/succès).<br>
                             • Intégration du flux d’onboarding complet Steam + Discord dans le formulaire d’inscription
                             (affichage des états, pseudo Discord détecté, blocage du bouton tant que les prérequis ne
                             sont pas remplis).<br>
@@ -465,8 +465,7 @@
                             </tr>
                             <tr>
                                 <td><strong>Frontend</strong></td>
-                                <td>Angular 19 (standalone components), TypeScript, RxJS, HTML, SCSS, Angular Material
-                                    (prototypage)</td>
+                                <td>Angular 19 (standalone components), TypeScript, RxJS, HTML, SCSS</td>
                             </tr>
                             <tr>
                                 <td><strong>Backend</strong></td>
@@ -475,7 +474,7 @@
                             </tr>
                             <tr>
                                 <td><strong>Bases de données</strong></td>
-                                <td>MySQL (invitation, auth…), MongoDB (selon services)</td>
+                                <td>MySQL (ms-auth, ms-rdv, ms-profile…), MongoDB (ms-notif)</td>
                             </tr>
                             <tr>
                                 <td><strong>Intégrations</strong></td>
@@ -483,7 +482,7 @@
                             </tr>
                             <tr>
                                 <td><strong>Infrastructure / DevOps</strong></td>
-                                <td>Docker, Docker Compose, Spring Cloud Config, GitHub/GitLab, Postman</td>
+                                <td>Docker, Docker Compose, Spring Cloud Config, GitHub, Postman</td>
                             </tr>
                             <tr>
                                 <td><strong>Conception &amp; Modélisation</strong></td>
@@ -647,7 +646,7 @@
 
                             • Création d'emailing et newsletters en XHTML.<br>
                             • Administration des serveurs d'entreprise et gestion des transferts de fichiers.<br>
-                            •Utilisation des méthodologies Agile et en cascade en fonction des projets.
+                            • Utilisation des méthodologies Agile et en cascade en fonction des projets.
                         </p>
                         <hr>
                     </div><!--//details-->
