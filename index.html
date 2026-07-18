@@ -413,7 +413,7 @@
 
                     <tr>
                         <td><strong>Backend <br>
-                            JavaScript / PHP</strong></td>
+                                JavaScript / PHP</strong></td>
                         <td>
                             Node.js, Express.js, Firebase Functions et PHP 7 / 8
                         </td>
@@ -454,7 +454,7 @@
                     <tr>
                         <td><strong>Serveurs applicatifs</strong></td>
                         <td>
-                            JBoss EAP 6.3.3 et JBoss EAP 7.4.9
+                            JBoss EAP 6.3.3 / EAP 7.3.7 / EAP 7.4.9
                         </td>
                     </tr>
                 </table>
@@ -518,7 +518,7 @@
                     <tr>
                         <td><strong>Workflows</strong></td>
                         <td>
-                            BPMN, W4 Composer, processus métier, variables de processus,
+                            Moteur W4 BPMN, W4 Composer, processus métier, variables de processus,
                             DataInput, DataOutput, DataObjectReference et transitions
                         </td>
                     </tr>
@@ -533,7 +533,7 @@
                     <tr>
                         <td><strong>Outils de données</strong></td>
                         <td>
-                            DBeaver et phpMyAdmin
+                            DBeaver, MySQL Workbench, phpMyAdmin
                         </td>
                     </tr>
                 </table>
@@ -630,6 +630,202 @@
             <section class="section experiences-section">
                 <h2 class="section-title"><span class="icon-holder"><i
                             class="fa-solid fa-briefcase"></i></span>Expériences</h2>
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">
+                                Concepteur Développeur d’Applications — Angular / Java
+                            </h3>
+                            <div class="time">Depuis janvier 2026</div>
+                        </div><!--//upper-row-->
+
+                        <div class="company">
+                            CARSAT Sud-Est — Centre référent risques professionnels —
+                            SI du Compte professionnel de prévention (C2P)
+                        </div>
+                    </div><!--//meta-->
+
+                    <div class="details">
+                        <p>
+                            Maintenance corrective et évolutive d’applications nationales liées au
+                            Compte professionnel de prévention, au sein d’un environnement associant
+                            Angular, Java, PostgreSQL, traitements Spring Batch et workflows BPMN.
+                        </p>
+
+                        <p>
+                            Intervention sur l’ensemble du cycle de développement : analyse des besoins
+                            métier et des incidents, développement frontend et backend, évolution de la
+                            base de données, modification des processus W4, tests, préparation des
+                            livraisons et accompagnement des mises en production.
+                        </p>
+
+                        <p>
+                            <strong>Maintenance applicative et support à la production :</strong><br>
+                            • Traitement de demandes d’intervention technique (DoIT) transmises par les
+                            agents métier.<br>
+                            • Analyse de processus W4 en erreur et préparation des demandes de redémarrage
+                            des tâches en état <em>failed</em>.<br>
+                            • Conception de scripts PostgreSQL correctifs ou d’initialisation, allant de
+                            la modification ponctuelle d’une donnée à la création complète d’une entreprise
+                            dans plusieurs tables.<br>
+                            • Réalisation de jointures complexes, recherches multi-schémas, contrôles de
+                            cohérence, sauvegardes préalables et scripts de retour arrière.<br>
+                            • Préparation des documents de livraison et d’installation, tests sur les
+                            différentes lignes applicatives puis validation sur les serveurs ISO répliquant
+                            la production.
+                        </p>
+
+                        <p>
+                            <strong>Correction d’un traitement Spring Batch national :</strong><br>
+                            • Analyse et correction d’une anomalie affectant le batch national de relevé
+                            des points des utilisateurs du C2P.<br>
+                            • Identification d’une erreur <code>BulkOperationException</code> liée à la
+                            gestion du cache Hibernate en fin de traitement.<br>
+                            • Création d’une nouvelle classe Java assurant le nettoyage du cache.<br>
+                            • Ajout d’un nouveau step dans le job Spring Batch, modification de sa
+                            configuration et adaptation des conditions de transition entre les steps.<br>
+                            • Validation du correctif sur les différents environnements de test avant
+                            livraison.
+                        </p>
+
+                        <p>
+                            <strong>Évolution du processus de reconversion professionnelle :</strong><br>
+                            • Développement de deux nouveaux cas de clôture d’une demande de reconversion
+                            professionnelle : annulation et interruption.<br>
+                            • Modification du frontend Angular et du backend Java : endpoints REST/JAX-RS,
+                            services métier, DTO, mappings Dozer et traitement de fin de processus.<br>
+                            • Ajout de nouvelles valeurs de référentiel dans les tables PostgreSQL pour
+                            les statuts d’acte de gestion, les raisons métier et les informations présentées
+                            aux utilisateurs.<br>
+                            • Adaptation du processus BPMN avec W4 Composer par l’ajout de
+                            <code>DataInput</code>, <code>DataOutput</code>,
+                            <code>DataObjectReference</code> et de variables de processus permettant au
+                            moteur W4 de prendre en compte les nouveaux statuts.<br>
+                            • Modification des données transmises au système éditique afin de générer les
+                            courriers correspondant à chaque nouvelle issue du processus.
+                        </p>
+
+                        <p>
+                            <strong>Migration du Captcha Orange :</strong><br>
+                            • Participation, en collaboration directe avec le référent PTN, à la migration
+                            du Captcha Orange V3 vers le flux V5 et son nouveau script JavaScript.<br>
+                            • Adaptation de l’intégration frontend Angular : configuration du module,
+                            composant de connexion, chargement du script Antibot et gestion de son cycle
+                            d’exécution.<br>
+                            • Évolution des appels backend Java, des propriétés applicatives et des
+                            configurations propres aux différents environnements.<br>
+                            • Réalisation des tests fonctionnels des modes Safe, Suspicious, Unknown et
+                            Blacklisted.<br>
+                            • Contribution à la préparation d’un guide d’installation destiné aux autres
+                            systèmes d’information concernés par cette migration.
+                        </p>
+
+                        <p>
+                            <strong>Livraisons et travail collaboratif :</strong><br>
+                            • Utilisation de GitLab pour la gestion des branches, les merge requests,
+                            les revues de code, les pipelines et les tags de livraison.<br>
+                            • Compilation et packaging des applications avec Maven.<br>
+                            • Préparation des lots selon les arborescences attendues par les équipes DevOps,
+                            avec livraison d’artefacts EAR, RAR et TGZ.<br>
+                            • Rédaction et mise à jour des changelogs, procédures d’installation et
+                            documentations de livraison versionnées sous Git.<br>
+                            • Consultation et mise à jour des spécifications fonctionnelles détaillées
+                            disponibles sur SharePoint.
+                        </p>
+
+                        <table>
+                            <tr>
+                                <th style="color: #e53170">Stack / Outils principaux</th>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Frontend</strong></td>
+                                <td>
+                                    Angular, TypeScript, RxJS, HTML, SCSS
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Backend</strong></td>
+                                <td>
+                                    Java 7 / 8, Spring Framework, Spring Boot, Spring Batch,
+                                    Java EE / Jakarta EE, EJB, JAX-RS
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Architecture &amp; données</strong></td>
+                                <td>
+                                    API REST, services métier, DTO, Dozer, Hibernate
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Bases de données</strong></td>
+                                <td>
+                                    PostgreSQL, DBeaver, SQL multi-schémas
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Workflows</strong></td>
+                                <td>
+                                    BPMN, W4 Composer, DataInput, DataOutput,
+                                    DataObjectReference
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Serveurs applicatifs</strong></td>
+                                <td>
+                                    JBoss EAP 6.3.3 et JBoss EAP 7.4.9
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Build &amp; versioning</strong></td>
+                                <td>
+                                    Maven, Git, GitLab, merge requests, pipelines et tags
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Tests</strong></td>
+                                <td>
+                                    JUnit, Postman, tests fonctionnels, tests d’intégration
+                                    et tests de non-régression
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Livraison</strong></td>
+                                <td>
+                                    Environnements de développement et de test, serveurs ISO,
+                                    production, EAR, RAR, TGZ
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Documentation</strong></td>
+                                <td>
+                                    GitLab, SharePoint, changelogs, procédures d’installation
+                                    et spécifications fonctionnelles détaillées
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>IDE</strong></td>
+                                <td>
+                                    IntelliJ IDEA, VSCode
+                                </td>
+                            </tr>
+                        </table>
+
+                        <hr>
+                    </div><!--//details-->
+                </div><!--//item-->
 
                 <div class="item">
                     <div class="meta">
